@@ -3,28 +3,44 @@
 This website is developed using PHP, HTML, CSS, and JavaScript, so it requires a local server to run on your device. Follow the steps below to set up and run the project:
 
 1. Install a Local Server.
+   
 Download and install XAMPP (or similar software that includes Apache and MySQL).
+
 Start the Apache and MySQL services from the XAMPP control panel.
+
 2. Set Up the Project Files.
+   
 Place the program files in the htdocs directory of XAMPP.
+
 Typically, this folder is located at C:\xampp\htdocs on Windows.
+
 Ensure the file structure and folder names match the references in the code.
-3. Run the Website.
-Open your browser and type the following:
 
-http://localhost/filename
+3. Open phpMyAdmin by typing: http://localhost/phpmyadmin
 
-Replace filename with the name of the main file.
+In phpMyAdmin, create a new database:
 
-4. Access MySQL (if necessary). 
-If the website interacts with a database:
-Open phpMyAdmin by typing:
+Click on New in the left sidebar.
 
-http://localhost/phpmyadmin
+Enter the name of the database as hge_db_ and click Create.
 
-Import the SQL database file provided with the project into a new or existing database.
+Import the provided database file:
+
+Click on the newly created hge_db_ database in the left sidebar.
+
+Go to the Import tab.
+
+Click Choose File, navigate to the program file directory, and select hge_db_.sql.
+
+Click Go to import the database.
 
 Update the database credentials in the PHP files as needed (e.g., host, username, password, and database_name).
+
+4. Run the Website.
+   
+Open your browser and type the following: http://localhost/filename
+
+Replace filename with the name of the folder and the main file. (e.g. http://localhost/PROGRAM/index.php)
 
 By following these steps, you can successfully set up and run the HGE e-commerce website prototype on your local machine.
 # HGE E-Commerce Website 
